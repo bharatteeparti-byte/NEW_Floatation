@@ -230,9 +230,10 @@ with left:
         vals = {}
         cols = st.columns(ncols)
         for i, feat in enumerate(feat_list):
-            fmean = stats["mean"][feat]
-            fmin  = stats["min"][feat]
-            fmax  = stats["max"][feat]
+            feat_stats = stats.get(feat, {})
+            fmean = feat_stats.get("mean", 0.0)
+            fmin  = feat_stats.get("min", 0.0)
+            fmax  = feat_stats.get("max", 0.0)
             step  = float(round((fmax - fmin) / 200, 4)) or 0.001
             short = feat.replace("Flotation Column ", "Col ")
             with cols[i % ncols]:
@@ -313,7 +314,7 @@ with right:
 
         for feat in highlight:
             val  = all_inputs[feat]
-            mean = stats["mean"][feat]
+            mean = stats.get(feat, {}).get("mean", 0.0)
             delta_pct = ((val - mean) / mean * 100) if mean != 0 else 0
             arrow = "↑" if delta_pct > 1 else ("↓" if delta_pct < -1 else "→")
             color = "#f85149" if delta_pct > 1 else ("#3fb950" if delta_pct < -1 else "#8b949e")
