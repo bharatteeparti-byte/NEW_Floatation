@@ -1,0 +1,170 @@
+{
+  "model_name": "LightGBM",
+  "r2_score": 0.8021,
+  "rmse": 0.5001,
+  "mae": 0.3612,
+  "features": [
+    "% Iron Feed",
+    "% Silica Feed",
+    "Starch Flow",
+    "Amina Flow",
+    "Ore Pulp Flow",
+    "Ore Pulp pH",
+    "Ore Pulp Density",
+    "Flotation Column 01 Air Flow",
+    "Flotation Column 02 Air Flow",
+    "Flotation Column 03 Air Flow",
+    "Flotation Column 04 Air Flow",
+    "Flotation Column 05 Air Flow",
+    "Flotation Column 06 Air Flow",
+    "Flotation Column 07 Air Flow",
+    "Flotation Column 01 Level",
+    "Flotation Column 02 Level",
+    "Flotation Column 03 Level",
+    "Flotation Column 04 Level",
+    "Flotation Column 05 Level",
+    "Flotation Column 06 Level",
+    "Flotation Column 07 Level"
+  ],
+  "target": "% Silica Concentrate",
+  "feature_stats": {
+    "% Iron Feed": {
+      "mean": 56.29473906811688,
+      "std": 5.157744142640887,
+      "min": 42.74,
+      "max": 65.78
+    },
+    "% Silica Feed": {
+      "mean": 14.65171555339798,
+      "std": 6.80743869107689,
+      "min": 1.31,
+      "max": 33.4
+    },
+    "Starch Flow": {
+      "mean": 2869.1405694542955,
+      "std": 1215.2037343666975,
+      "min": 0.00202596,
+      "max": 6300.23
+    },
+    "Amina Flow": {
+      "mean": 488.1446972240944,
+      "std": 91.23053356507404,
+      "min": 241.669,
+      "max": 739.538
+    },
+    "Ore Pulp Flow": {
+      "mean": 397.57837171046845,
+      "std": 9.699784987199482,
+      "min": 376.249,
+      "max": 418.641
+    },
+    "Ore Pulp pH": {
+      "mean": 9.767638747852406,
+      "std": 0.38700730415631396,
+      "min": 8.75334,
+      "max": 10.8081
+    },
+    "Ore Pulp Density": {
+      "mean": 1.6803796856003073,
+      "std": 0.06924882859568555,
+      "min": 1.51982,
+      "max": 1.85325
+    },
+    "Flotation Column 01 Air Flow": {
+      "mean": 280.151856174563,
+      "std": 29.621287562414715,
+      "min": 175.51,
+      "max": 373.871
+    },
+    "Flotation Column 02 Air Flow": {
+      "mean": 277.1599652228685,
+      "std": 30.14935669786789,
+      "min": 175.156,
+      "max": 375.992
+    },
+    "Flotation Column 03 Air Flow": {
+      "mean": 281.08239727752147,
+      "std": 28.55826846952188,
+      "min": 176.469,
+      "max": 364.346
+    },
+    "Flotation Column 04 Air Flow": {
+      "mean": 299.4477935583694,
+      "std": 2.572537558867854,
+      "min": 292.195,
+      "max": 305.871
+    },
+    "Flotation Column 05 Air Flow": {
+      "mean": 299.91781411764566,
+      "std": 3.6365792668945245,
+      "min": 286.295,
+      "max": 310.27
+    },
+    "Flotation Column 06 Air Flow": {
+      "mean": 292.0714850390466,
+      "std": 30.217804052139737,
+      "min": 189.928,
+      "max": 370.91
+    },
+    "Flotation Column 07 Air Flow": {
+      "mean": 290.75485625863615,
+      "std": 28.670105003293344,
+      "min": 185.962,
+      "max": 371.593
+    },
+    "Flotation Column 01 Level": {
+      "mean": 520.2448227480261,
+      "std": 131.01492358079014,
+      "min": 149.218,
+      "max": 862.274
+    },
+    "Flotation Column 02 Level": {
+      "mean": 522.6495545316109,
+      "std": 128.16505049432595,
+      "min": 210.752,
+      "max": 828.919
+    },
+    "Flotation Column 03 Level": {
+      "mean": 531.352662325599,
+      "std": 150.8421644099908,
+      "min": 126.255,
+      "max": 886.822
+    },
+    "Flotation Column 04 Level": {
+      "mean": 420.32097307964045,
+      "std": 91.79443158750131,
+      "min": 162.201,
+      "max": 680.359
+    },
+    "Flotation Column 05 Level": {
+      "mean": 425.2517058999015,
+      "std": 84.53582198906616,
+      "min": 166.991,
+      "max": 675.644
+    },
+    "Flotation Column 06 Level": {
+      "mean": 429.94101771773927,
+      "std": 89.86222527703632,
+      "min": 155.841,
+      "max": 698.861
+    },
+    "Flotation Column 07 Level": {
+      "mean": 421.02123055367605,
+      "std": 84.89149071708283,
+      "min": 175.349,
+      "max": 659.902
+    }
+  },
+  "all_results": {
+    "LightGBM": {
+      "R2": 0.8021,
+      "RMSE": 0.5001,
+      "MAE": 0.3612
+    },
+    "XGBoost": {
+      "R2": 0.7146,
+      "RMSE": 0.6006,
+      "MAE": 0.4325
+    }
+  }
+}
